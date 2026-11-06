@@ -1,0 +1,51 @@
+<!-- Assignment 14 | Name: Faiz Akhtar | Roll No: BCS2025263 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Layout</title>
+
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>Dashboard Header</header>
+        <aside>Sidebar</aside>
+        <main>Main Content</main>
+        <footer>Dashboard Footer</footer>
+    </div>
+</body>
+</html>
